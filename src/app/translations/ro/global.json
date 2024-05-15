@@ -1,0 +1,36 @@
+{
+    "home":{
+        "h1":"Site-uri construite cu Utilizatorul ca element central!",
+        "welcome1":"Bună! Mă numesc ",
+        "name":"Sergiu George Pop",
+        "welcome2":" și bine ați venit pe site-ul meu personal!",
+        "p1": "Sunt un dezvoltator web cu sediul în județul Bihor, România. Pasiunea mea constă în construirea de orice, de la site-uri de afaceri mici la aplicații web interactive bogate. Dacă sunteți o companie care caută o prezență pe web sau un angajator nu ezitați să mă contactați fie prin secțiunea Contact sau dând clic pe adresa de mail personală de la sfârșitul paginii.",
+        "p2": "Înainte de cariera mea în dezvoltarea web, am petrecut 10 ani lucrând ca inginer mecanic. În acest timp, am câștigat o vastă experiență atât în ​​design 2D, cât și în 3D, am fost delegat luni de zile în străinătate și am gestionat un proiect de 3 luni coordonând până la 10 persoane. Cu toate acestea, întotdeauna am fost pasionat de programare și dezvoltare de software, ceea ce m-a determinat să urmez o carieră în dezvoltarea web.",
+        "resume": "Click aici pentru a-mi descărca CV-ul în limba Engleză    "
+    },
+    "navbar":{
+        "home": "ACASĂ",
+        "credentials": "ACREDITĂRI",
+        "projects": "PROIECTE",
+        "contact": "CONTACT"
+    },
+    "credentials":{
+        "top-skills":"Abilități",
+        "certifications": "Certificate"
+    },
+    "projects":{
+        "clock":"Țineți cont de timpul petrecut studiing, când să luați pauză, și pentru cât timp.",
+        "calculator": "O aplicație tip calculator, dezvoltată în întregime indepentent folosind JavaScript",
+        "piano":"Aparat de percuție, compatibil cu mouse ori tastatură.",
+        "quote":"Un simplu generator de citate.",
+        "to_do_list":"O aplicație de gestionare a sarcinilor.",
+        "exercise": "Urmăriți-vă exercițiile, fie creând un cont nou sau conectându-vă la unul existent."
+    },
+    "contact":{
+        "title":"Să intrăm în legătură!",
+        "hiring":"Angajator? ",
+        "hiring_text": "Veniți să discutăm ce aveți nevoie pentru proiect, ce scop și cronologie v-ați propus. Sunt sigur că împreună putem crea ceva într-adevăr fantastic!",
+        "contracting": "Contractant? ",
+        "contracting_text": "Aveți nevoie de un dezvolator pentru o sarcină specifică, ori suport pe timp nedeterminat? Nu mai e nevoie să căutați - vă stau la dispoziție!"
+    }
+}

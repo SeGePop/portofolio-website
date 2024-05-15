@@ -1,0 +1,36 @@
+{
+    "home":{
+        "h1":"User friendly, user first websites.",
+        "welcome1":"Hello! My name is ",
+        "name":"Sergiu George Pop",
+        "welcome2":" and welcome to my website!",
+        "p1": "I am a web developer based in Bihor County, Romania. My passion lies in building everything from small business sites to rich interactive web apps. If you are a business seeking a web presence or an employer, please feel free to get in touch with me via the Contact section or by clicking on my personal e-mail address at the bottom.",
+        "p2": "Prior to my career in web development, I spent 10 years working as a mechanical engineer. During this time, I gained extensive experience in both 2D and 3D design, was delegated for months at a time abroad, and managed a 3-month-long project coordinating up to 10 people. However, I have always been passionate about programming and software development, which has led me to pursue a career in web development.",
+        "resume": "Click here to download my Resume"
+    },
+    "navbar":{
+        "home": "HOME",
+        "credentials": "CREDENTIALS",
+        "projects": "PROJECTS",
+        "contact": "CONTACT"
+    },
+    "credentials":{
+        "top-skills":"Top Skills",
+        "certifications": "Certifications"
+    },
+    "projects":{
+        "clock":"Keep track of your time studying, and when to take a break.",
+        "calculator": "Working Calculator built from scratch using JavaScript",
+        "piano":"Keyboard and Mouse activated drum machine",
+        "quote":"A random quote generator",
+        "to_do_list":"A To-Do List app with local storage for privacy.",
+        "exercise": "Track your exercises. Create a new account, or connect to an existing one."
+    },
+    "contact":{
+        "title":"Get in touch!",
+        "hiring":"Hiring? ",
+        "hiring_text": "Let's discuss your project requirements, goals, and timeline. I'm excited to collaborate and create something amazing together.",
+        "contracting": "Contracting? ",
+        "contracting_text": "Need a reliable developer for a specific task or ongoing support? Look no further—I'm here to assist."
+    }
+}
