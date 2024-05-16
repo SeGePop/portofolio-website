@@ -1,0 +1,128 @@
+
+:root {
+  --background-color: rgb(7, 234, 128);
+}
+
+.app {
+  font-family: Lato, Arial, Georgia;
+  height:200px;
+}
+
+.page-author {
+  position: absolute;
+  bottom: -50px;
+  left: 150px;
+}
+
+.RandomQuoteGenerator_App {
+  height:100vh;
+  background-color: var(--background-color, rgb(7, 234, 128));
+}
+
+#quote-box {
+  width: 400px;
+  height: 200px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+
+#text,
+#quote_i {
+  color: var(--background-color, rgb(7, 234, 128));
+  position: absolute;
+  top: 20px;
+  left: 5px;
+  right: 5px;
+  font-size: 25px;
+  text-align: center;
+}
+
+#author:before {
+  content: "-";
+}
+#author {
+  position: absolute;
+  top: 55%;
+  left: 85%;
+  transform: translate(-70%, -70%);
+  color: var(--background-color, rgb(7, 234, 128));
+  font-size: 15px;
+  white-space: nowrap;
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+}
+
+#new-quote {
+  background-color: var(--background-color, rgb(7, 234, 128));
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 999;
+  color: white;
+}
+#tweet-quote {
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  background-color: var(--background-color, rgb(7, 234, 128));
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 999;
+  color: white;
+}
+#tweet-quote:hover {
+  background-color: var(--background-color, rgb(7, 234, 128));
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+#tumblr_icon {
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  background-color: var(--background-color, rgb(7, 234, 128));
+  position: absolute;
+  bottom: 20px;
+  left: 80px;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 999;
+  color: white;
+}
+#tumblr_icon:hover {
+  background-color: var(--background-color, rgb(7, 234, 128));
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+#new-quote:hover {
+  background-color: var(--background-color, rgb(7, 234, 128));
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+button:active {
+  color: var(--default-color);
+}
+
+#by {
+  color: white;
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
+  color: white;
+}

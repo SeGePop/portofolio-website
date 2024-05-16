@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Orbitron&display=swap");
+
+.JSCalculator_App {
+  font-family: "Orbitron";
+  text-align: center;
+  width: 400px;
+  margin: auto;
+  border: solid 10px black;
+  font-family: "Orbitron";
+  background-color: grey;
+  height:100vh;
+}
+
+#JSCalculatordisplay,#displayFormula,
+#formula {
+  font-family: "Orbitron";
+  text-align: right;
+  padding-right: 30px;
+  background-color: black;
+  font-size: 20px;
+  height: 50px;
+  color:white;
+}
+#JSCalculator_App {
+  font-family: "Orbitron";
+  background-color: black;
+  color: white;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.button {
+  font-family: "Orbitron";
+  background-color: #ddd;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid-container button:nth-child(1) {
+  background-color: red;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  grid-column: 1 / 3;
+}
+/* AC */
+.grid-container button:nth-child(17) {
+  background-color: blue;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  grid-column: 4/4;
+  grid-row: 6 / 4;
+}
+/* equals */
+.grid-container button:nth-child(15) {
+  background-color: #ddd;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  grid-column: 1/3;
+}
+.grid-container button:nth-child(2),
+.grid-container button:nth-child(3),
+.grid-container button:nth-child(7),
+.grid-container button:nth-child(11) {
+  background-color: darkgray;
+}
+.button:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgba(250, 242, 255, 0.4);
+  cursor: pointer;
+}
+.button:focus {
+  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.5);
+  outline: none;
+}
+a {
+  color: white;
+}

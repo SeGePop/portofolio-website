@@ -1,33 +1,593 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --highlight: #047690;
+  --highlight2: #00dee6;
+  --body_background: rgb(20, 20, 20);
+  --background: #333;
+  --text-color: white;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+/* PAGE FORMATTING */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .website {
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+
+  .logo {
+    max-width: 50px;
+    height: auto;
+    width: 40px !important; /* ie8 */
+    padding: 5px;
+  }
+
+  .topnav a {
+    font-size: 10px !important;
+    padding: 8px 10px !important;
+  }
+  .language_buttons {
+    font-size: 10px !important;
+  }
+
+  section {
+    font-size: 1em;
+    width: 80vw !important;
+    height: auto !important;
+    padding: 30px;
+  }
+  /* PROFILE PICTURE */
+  .circle {
+    box-shadow: 0 0 10px var(--highlight);
+    position: relative;
+    overflow: hidden;
+    width: 100px !important;
+    height: 100px !important;
+    float: left;
+    border-radius: 50%;
+    margin: 20px;
+    shape-outside: circle();
+  }
+  /* CERTIFICATES */
+  .credentials_content {
+    width: 95vw !important;
+  }
+  .experience {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto !important;
+    width: 70vw !important;
+    font-size: 15px;
+  }
+  .diplomas {
+    width: 100% !important;
+    height: auto !important;
+    margin-top: 10px;
+  }
+
+  .credentials_content {
+    display: block !important;
+  }
+
+  .each-slide-effect > div {
+    height: 230px !important;
+    margin-top: 0px;
+  }
+  /* PROJECTS */
+  .projects_content {
+    margin-top: -50px;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .projects_content > h1 {
+    font-size: 18px !important;
+    text-decoration: underline;
+  }
+
+  div.gallery {
+    width: 70vw !important;
+    height: 21vh !important;
+    flex-direction: row !important;
+    justify-content: space-between;
+  }
+
+
+  .project_button {
+    position: relative !important;
+    bottom: 0px;
+    height: 30px !important;
+    width: 30px !important;
+  }
+
+  .desc {
+    margin-left: -90% !important;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
+  div.gallery img {
+    width: 50vw !important;
+    height: 20vh !important;
+    object-fit: cover;
+  }
+
+/* PROJECTS FRONTEND */
+
+  .frontend_projects_content {
+    display: flex !important;
+    flex-direction: column !important;
+    margin-top: 0;
+    margin-left: 50px;
+    margin-bottom: 50px;
+  }
+
+  div.frontend_gallery {
+    width: 70vw !important;
+    height: 21vh !important;
+    flex-direction: row !important;
+    justify-content: space-between;
+  }
+
+  .frontend_desc {
+    margin-left: 10px;
+  }
+
+  div.frontend_gallery img {
+    width: 20vw !important;
+    height: 19vh !important;
+    object-fit: cover;
+  }
+
+  /* BACKEND PROJECTS */
+  .bash {
+    background-color: black;
+    color: green !important;
+    font-size: 16px !important;
+    font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+    width: 100vw !important;
+    height: 100vh !important;
+    display: inline-block;
+    font-size: small;
+  }
+  .bash > h1 {
+    margin-left: 0px !important;
+    width: 60vw;
+  }
+  
+  .bash > ul > li > a{
+    color: green !important;
+  }
+  
+  .bash > ul > li {
+    margin-top: 10px;
+    margin-bottom: 20px !important;
+  }
+  
+  .bash > ul {
+    list-style-type: none; /* Remove default bullets */
+    width: 50vw;
+  }
+  
+  .bash > ul li::before {
+    content: '>';
+    margin-right: 0.1em !important;
+    margin-left: -10px;
+  }
+  
+
+  /* CONTACT */
+.contact_content {
+  margin-left: -30px;
+  text-align: left !important;
+  justify-content: center !important;
+}
+
+.contacts-container > h1{
+  text-align: center;
+}
+
+.email-element > a{
+  color: var(--highlight2);
+  margin-left:10vw;
+}
+
+/* UNDER CONSTRUCTION CSS */
+
+.under_construction{
+  height: 100vh !important;
+  width: auto;
+  text-align: center;
+  color: var(--highlight2);
+  font-size: 10px !important;
+}
+
+.under_construction > img {
+  width: 50vw;
+}
+
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  section {
+    font-size: 1em;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  section {
+    font-size: 1.1em;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  section {
+    font-size: 1.2em;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  section {
+    font-size: 19px;
   }
 }
 
+html {
+  scroll-behavior: smooth;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  background-image: linear-gradient(var(--body_background), var(--background));
+  color: var(--text-color);
+}
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  height: 100%;
+  width: auto;
+  /* hide scrollbar */
+  /* overflow-y: hidden; */
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.logo {
+  max-width: 50px;
+  height: auto;
+  width: auto\9; /* ie8 */
+  padding: 5px;
+}
+
+/* topbar */
+/* Add a black background color to the top navigation */
+
+.logo_area {
+  flex: 1;
+}
+
+/* navigation bar */
+/* Style the links inside the navigation bar */
+.topnav {
+  width: 100%;
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  background-color: var(--background);
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.topnav a {
+  float: right;
+  color: var(--text-color);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: var(--text-color);
+  color: var(--highlight);
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: var(--highlight);
+  color: white;
+}
+
+/* Page content */
+
+.website {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section {
+  padding-top: 50px;
+  height: 100vh;
+  height: 100vh;
+  top: 0;
+  width: 100vw;
+}
+/* all links will be highlighted */
+a {
+  color: var(--highlight);
+}
+
+/* HOME CONTENT */
+.home_content {
+  text-shadow: 0px 1px 0 var(--highlight);
+  width: 70vw;
+}
+
+.home_content > span {
+  color: var(--highlight);
+  text-shadow: 1px 1px 1px black;
+}
+
+.circle {
+  box-shadow: 0 0 10px var(--highlight);
+  position: relative;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  float: left;
+  border-radius: 50%;
+  margin: 20px;
+  shape-outside: circle();
+}
+
+.personal_cv {
+  float: right;
+}
+.personal_cv > a {
+  color: var(--text-color);
+  text-decoration: none;
+  background-color: var(--highlight);
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 30px;
+  text-align: center;
+  border-radius: 5px;
+  float: right;
+}
+.personal_cv > a > strong {
+  color: var(--text-color);
+  display: inline-block;
+  transform: translateX(30%);
+  transition: 0.5s;
+}
+
+/* LINE BREAKER */
+hr {
+  width: 90%;
+    height: 2px;
+    background: linear-gradient(to right, white 0%, var(--highlight2) 50%, white 100%);
+    border: none;
+}
+
+/* CREDENTIALS */
+.credentials_content {
+  display: flex;
+  justify-content: center;
+  width: 95vw;
+  margin-top: 20px;
+}
+
+.experience {
+  width: 35vw;
+  height: auto;
+}
+
+/* SLIDES */
+.diplomas {
+  width: 60vw;
+  height: 100vh;
+}
+.each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 510px;
+}
+
+/* PROJECTS */
+
+.projects_content {
+  width: 90vw;
+  margin-top: -50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+
+
+.projects_content > h1 {
+  font-size: 0;
+}
+
+div.gallery {
+  background-image: linear-gradient(var(--body_background), var(--background));
+  border: #047690 solid;
+  margin: 5px;
+  float: left;
+  width: 30vw;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+div.gallery:hover {
+  border: solid white;
+}
+
+div.gallery img {
+  width: 30vw;
+  height: 50vh;
+  object-fit: cover;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/* FRONTEND PROJECTS */
+
+.frontend_projects_content {
+  width: 98vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.frontend_projects_content > h1 {
+  font-size: 0;
+}
+
+div.frontend_gallery {
+  background-image: linear-gradient(var(--body_background), var(--background));
+  border: #047690 solid;
+  margin: 5px;
+  float: left;
+  width: 15vw;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+div.frontend_gallery:hover {
+  border: solid white;
+}
+
+div.frontend_gallery img {
+  width: 15vw;
+  height: 40vh;
+  object-fit: cover;
+}
+
+div.frontend_desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/* BACKEND PROJECTS */
+
+.bash {
+  background-color: black;
+  color: green !important;
+  font-size: medium;
+  font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+  width: 100%;
+  display: inline-block;
+  font-size: large;
+}
+
+.bash > h1 {
+  margin-left: 50px;
+}
+
+.bash > ul > li > a{
+  color: green !important;
+}
+
+.bash > ul > li {
+  margin-top: 10px;
+  margin-bottom: 20px !important;
+}
+
+.bash > ul {
+  list-style-type: none; /* Remove default bullets */
+}
+
+.bash > ul li::before {
+  content: '>'; /* Unicode checkmark symbol */
+  margin-right: 0.5em;
+}
+
+/* CONTACT */
+.contact_content {
+  text-align: center;
+  vertical-align: middle;
+  width: 70vw;
+  margin-bottom: 0px;
+}
+
+.social_buttons {
+  padding-top: 60px;
+  display: flex; /* establish flex container */
+  justify-content: space-between; /* switched from default (flex-start, see below) */
+  gap: 5px;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  width: 60;
+  gap: 50px;
+  font-size: 18px;
+}
+
+.left_column > ul {
+  list-style-type: none; /* Remove bullets */
+}
+
+i {
+  color: var(--highlight);
+}
+
+/* LANGUAGE BUTTONS */
+
+.language_buttons {
+  background-color: var(--background);
+  float: right;
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 17px;
+  align-items: center;
+  justify-content: center;
+  border: solid #047690;
+  border-radius: 25%;
+  background: none;
+  margin: 5px;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+/* Change the color of links on hover */
+.language_buttons:hover {
+  background-color: var(--text-color);
+  color: var(--highlight);
+}
+
+/* Add a color to the active/current link */
+.language_buttons.active {
+  background-color: var(--highlight);
+  color: white;
+}
+
+
+/* UNDER CONSTRUCTION CSS */
+
+.under_construction{
+  width: auto;
+  height: 100vh;
+  text-align: center;
+  color: var(--highlight2);
+  font-size: 25px;
 }
